@@ -1,0 +1,56 @@
+HTML usa tags para indicar para o navegador como interpretar o conteudo EX: <paragrafo> Conteudo </paragrafo>
+nome da pagina tag <title> </title>
+titutlo da pagina tag <h1> </h1>
+indicar para aceitar acentos tag <meta charset="UTF-8" />
+negrito tag <b> </b>
+italico tag <i> </i>
+destaque visual tag <mark> </mark>
+texto subscrito (nota) tag <small> </small> ou <sub> </sub>
+texto superescrito (potencia de números) tag <sup> </sup>
+sublinhar texto tag <ins> </ins>
+imagem tag <img src="caminho da imagem" alt="descrição da imagem">
+figura tag <figure> </figure>
+legenda figura tag <figcaption> </figcaption>
+link tag <a href="caminho do link"> </a>
+lista desordenada tag <ul> </ul>
+lista ordenada tag <ol> </ol>
+item da lista tag <li> </li>
+indicar onde a lista deve iniciar tag <ol start="numero"> </ol>
+indicar a ordem da lista tag <ol reversed> </ol>
+indica o tipo da lista ordenada (numeros, letras, etc) tag <type> </type> 
+para abrir o link em uma nova aba tag <a target="_blank" href="caminho do link"> </a>
+para fazer ligações clicando em númeors de telefone tag <a href="tel:numero do telefone"> </a>
+para enviar email tag <a href="mailto:email do destinatário"> </a>
+para direcionar ao whatsapp tag <a href="https://wa.me/numero do telefone"> </a>
+abrir instagram tag <a href="https://www.instagram.com/nome do perfil"> </a>
+abrir facebook tag <a href="https://www.facebook.com/nome do perfil"> </a>
+tag <div> </div> para agrupar elementos
+tag <span> </span> para agrupar elementos em linha
+tag <lang> </lang> para indicar o idioma do conteudo
+identificar a div com id tag <div id="nome do id"> </div>
+identificar a div com class tag <div class="nome da class"> </div>
+id é usado para identificar um elemento unico, class é usado para identificar elementos que podem se repetir
+para fazer uma linha horizontal tag <hr>
+para fazer uma quebra de linha tag <br>
+aumentar o tamanho da fonte tag <big> </big>
+diminuir o tamanho da fonte tag <small> </small>
+
+<!-- CSS -->
+CSS é usado para estilizar o conteudo da pagina, podendo ser feito de 3 formas:
+1 - Inline: dentro da tag do elemento, usando o atributo style
+2 - Interno: dentro da tag <style> no cabeçalho do documento
+3 - Externo: em um arquivo separado com extensão .css, que é linkado no cabeçalho
+do documento com a tag <link rel="stylesheet" href="caminho do arquivo.css">
+Para vinvular o html com o CSS, é necessário colocar a tag <link rel="stylesheet" href="caminho do arquivo.css"> 
+dentro da tag <head> do documento HTML.
+quando mais específico for o seletor, mais prioridade ele terá na aplicação do estilo. A ordem de prioridade é a seguinte:
+1. Inline styles (estilos aplicados diretamente no elemento HTML usando o atributo style)
+2. Internal styles (estilos definidos dentro da tag <style> no cabeçalho do documento)
+3. External styles (estilos definidos em um arquivo CSS externo vinculado ao documento HTML)
+4. Geral -> class -> id -> tag
+alterar fundo de uma div ou elemento tag background-color: cor;
+colocar imagem de fundo tag background-image: url("caminho da imagem");
+alterar tamanho da imagem de fundo tag background-size: cover;
+alterar posição da imagem de fundo tag background-position: center;
+informar se a imagem repete tag background-repeat: no-repeat;
+para fazer background gradiente tag background: linear-gradient(direção, cor1, cor2);

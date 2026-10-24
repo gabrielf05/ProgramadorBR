@@ -1,0 +1,8 @@
+div{
+    width: 500px;
+    height: 500px;
+    background:linear-gradient(to left, green, blue,red)
+}
+body{
+    background:linear-gradient(to right, green, blue,red)
+}

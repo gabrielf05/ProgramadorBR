@@ -1,0 +1,12 @@
+h1,h2 {
+    color: red;
+    background-color: yellow;
+}
+
+#formacao {
+    color: blue;
+    background-color: transparent;
+}
+.fundo-azul {
+    background-color: blue;
+}
