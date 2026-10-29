@@ -1,0 +1,123 @@
+CSS é usado para estilizar o conteudo da pagina, podendo ser feito de 3 formas:
+1 - Inline: dentro da tag do elemento, usando o atributo style
+2 - Interno: dentro da tag <style> no cabeçalho do documento
+3 - Externo: em um arquivo separado com extensão .css, que é linkado no cabeçalho
+ do documento com a tag <link rel="stylesheet" href="caminho do arquivo.css">
+ Para vinvular o html com o CSS, é necessário colocar a tag <link rel="stylesheet" href="caminho do arquivo.css"> 
+ dentro da tag <head> do documento HTML.
+quando mais específico for o seletor, mais prioridade ele terá na aplicação do estilo. A ordem de prioridade é a seguinte:
+1. Inline styles (estilos aplicados diretamente no elemento HTML usando o atributo style)
+2. Internal styles (estilos definidos dentro da tag <style> no cabeçalho do documento)
+3. External styles (estilos definidos em um arquivo CSS externo vinculado ao documento HTML)
+4. Geral -> class -> id -> tag
+alterar fundo de uma div ou elemento tag background-color: cor;
+colocar imagem de fundo tag background-image: url("caminho da imagem");
+alterar tamanho da imagem de fundo tag background-size: cover;
+alterar posição da imagem de fundo tag background-position: center;
+informar se a imagem repete tag background-repeat: no-repeat;
+para fazer background gradiente tag background: linear-gradient(direção, cor1, cor2);
+
+text-transform: capitalize; -> primeiras letras maiusculas
+text-transform: uppercase; -> todas as letras maiusculas
+text-transform: lowercase; -> todas as letras minusculas
+text-decoration: underline; -> sublinhado
+text-decoration: overline; -> linha sobre o texto
+text-decoration: line-through; -> linha no meio do texto
+text-decoration: none; -> remove qualquer decoração do texto
+text-align: left; -> alinha o texto a esquerda
+text-align: center; -> alinha o texto ao centro
+text-align: right; -> alinha o texto a direita
+text-align: justify; -> justifica o texto
+line-height: 1.5em; -> define o espaçamento entre linhas
+text-indent: 2em; -> define o recuo da primeira linha do parágrafo
+border: 1px solid black; -> define a borda do elemento
+border-width: 2px; -> define a largura da borda do elemento
+border-style: dashed; -> define o estilo da borda do elemento
+border-color: red; -> define a cor da borda do elemento
+border-radius: 10px; -> define o arredondamento da borda do elemento
+margin: 10px; -> define a margem do elemento
+margin-top: 10px; -> define a margem superior do elemento
+margin-right: 10px; -> define a margem direita do elemento
+margin-bottom: 10px; -> define a margem inferior do elemento
+margin-left: 10px; -> define a margem esquerda do elemento
+margin: auto; -> centraliza o elemento horizontalmente 
+padding: 10px; -> define o preenchimento do elemento
+padding-top: 10px; -> define o preenchimento superior do elemento
+padding-right: 10px; -> define o preenchimento direito do elemento
+padding-bottom: 10px; -> define o preenchimento inferior do elemento
+padding-left: 10px; -> define o preenchimento esquerdo do elemento
+box-shadow: 10px 10px 5px grey; -> define a sombra do elemento
+box-sizing: border-box; -> define o tamanho do elemento incluindo a borda e o preenchimento
+overflow: hidden; -> esconde o conteúdo que ultrapassa o tamanho do elemento
+overflow: scroll; -> adiciona uma barra de rolagem ao elemento
+overflow: auto; -> adiciona uma barra de ro lagem ao elemento apenas quando necessário 
+list-style: none; -> remove os marcadores da lista
+list-style: decimal; -> define os marcadores da lista como números decimais
+list-style: lower-alpha; -> define os marcadores da lista como letras minusculas
+list-style-image: url("caminho da imagem"); -> define uma imagem como marcador da lista
+cursor: pointer; -> muda o cursor para uma mãozinha quando passa o mouse sobre o elemento
+cursor: default; -> muda o cursor para o padrão quando passa o mouse sobre o elemento
+cursor: crosshair; -> muda o cursor para uma cruz quando passa o mouse sobre o elemento
+cursor: move; -> muda o cursor para uma seta de movimentação quando passa o mouse sobre o elemento
+cursor: text; -> muda o cursor para uma barra de texto quando passa o mouse sobre o elemento
+cursor: wait; -> muda o cursor para um relógio quando passa o mouse sobre o elemento
+cursor: help; -> muda o cursor para um ponto de interrogação quando passa o mouse sobre o elemento
+cursor: not-allowed; -> muda o cursor para um círculo com uma linha quando passa o mouse sobre o elemento
+cursor: url("caminho do cursor"); -> muda o cursor para uma imagem personalizada quando passa o mouse sobre o elemento
+
+pseudoclasses são usadas para definir estilos para elementos em estados específicos, como quando o mouse está sobre eles ou quando eles estão focados. Algumas das pseudoclasses mais comuns incluem:
+- :hover -> quando o mouse está sobre o elemento
+- :focus -> quando o elemento está em foco (por exemplo, um campo de formulário)
+- :active -> quando o elemento está sendo clicado
+- :visited -> quando o link já foi visitado
+- :first-child -> seleciona o primeiro filho de um elemento pai
+- :last-child -> seleciona o último filho de um elemento pai
+- :nth-child(n) -> seleciona o enésimo filho de um elemento pai
+- :not(selector) -> seleciona todos os elementos que não correspondem ao seletor especificado
+- ::before -> insere conteúdo antes do conteúdo do elemento
+- ::after -> insere conteúdo depois do conteúdo do elemento
+- ::first-letter -> seleciona a primeira letra do conteúdo do elemento
+- ::first-line -> seleciona a primeira linha do conteúdo do elemento
+
+
+CSS Intermediário
+- transform: rotate(45deg); -> rotaciona o elemento em 45 graus
+- transform: scale(1.5); -> aumenta o tamanho do elemento em 1.5
+- transform: translateX(50px); -> move o elemento 50px para a direita
+- transform: translateY(50px); -> move o elemento 50px para baixo
+
+display é a propriedade que define como o elemento será exibido na página. Alguns valores comuns incluem:
+- block: o elemento é exibido como um bloco, ocupando toda a largura disponível e iniciando em uma nova linha.
+- inline: o elemento é exibido na mesma linha que os elementos adjacentes, ocupando apenas a largura necessária para seu conteúdo.
+- inline-block: o elemento é exibido na mesma linha que os elementos adjacentes, mas permite definir largura e altura.
+- flex: o elemento é exibido como um contêiner flexível, permitindo que seus filhos sejam organizados em uma linha ou coluna, com opções de alinhamento e distribuição de espaço.
+- grid: o elemento é exibido como um contêiner de grade, permitindo que seus filhos sejam organizados em linhas e colunas, com opções de alinhamento e distribuição de espaço.
+- none: o elemento não é exibido na página, mas ainda ocupa espaço no layout.
+
+position é a propriedade que define o tipo de posicionamento do elemento na página. Alguns valores comuns incluem:
+- static: o elemento é posicionado de acordo com o fluxo normal do documento (padrão).
+- relative: o elemento é posicionado em relação à sua posição original, permitindo que seja movido usando as propriedades top, right, bottom e left.
+- absolute: o elemento é posicionado em relação ao seu elemento pai mais próximo que tenha um posicionamento definido (relative, absolute ou fixed). Ele é removido do fluxo normal do documento.
+- fixed: o elemento é posicionado em relação à janela de visualização, permanecendo fixo na tela mesmo quando a página é rolada. Ele também é removido do fluxo normal do documento.
+- sticky: o elemento é posicionado de acordo com o fluxo normal do documento até que um determinado ponto seja atingido, momento em que ele se torna fixo na tela. Ele alterna entre os comportamentos relative e fixed, dependendo da rolagem da página.
+
+ALINHAMENTO HORIZONTAL:
+float é a propriedade que define se o elemento deve flutuar à esquerda ou à direita do seu contêiner, permitindo que outros elementos se posicionem ao seu redor. Alguns valores comuns incluem:
+- left: o elemento flutua à esquerda do seu contêiner.
+- right: o elemento flutua à direita do seu contêiner.
+- none: o elemento não flutua e permanece no fluxo normal do documento (padrão).
+
+clear é a propriedade que define se um elemento deve ser posicionado abaixo de elementos flutuantes anteriores. Alguns valores comuns incluem:
+- left: o elemento não pode ser posicionado à esquerda de elementos flutuantes anteriores.
+- right: o elemento não pode ser posicionado à direita de elementos flutuantes anteriores.
+- both: o elemento não pode ser posicionado à esquerda ou à direita de elementos flutuantes anteriores.
+
+ALINHAMENTO VERTICAL
+- utilizando padding
+- utilizando float
+- utilizando display: flex; e align-items: center; para centralizar verticalmente os elementos dentro de um contêiner flexível.
+
+Media queries são usadas para aplicar estilos diferentes dependendo das características do dispositivo ou da tela em que a página está sendo visualizada. Elas permitem criar layouts responsivos que se adaptam a diferentes tamanhos de tela, como desktops, tablets e smartphones. A sintaxe básica de uma media query é a seguinte:
+@media (condição) {
+    /* estilos CSS aplicados quando a condição é verdadeira */
+}
