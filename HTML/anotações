@@ -58,6 +58,7 @@ tag <input> </input> para criar campos de entrada de dados
 - type="button" para criar botões genéricos
 - type="datetime-local" para criar campos de data e hora local
 - type="tel" para criar campos de telefone
+- placeholder é usado para criar um texto de dica dentro do campo de entrada
 
 tag <label> </label> para criar rótulos para os campos de entrada
 tag <textarea> </textarea> para criar campos de texto maiores
